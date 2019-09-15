@@ -1,0 +1,283 @@
+﻿[
+	{
+		"Name": "牛魔",
+		"Specialities": [
+			{
+				"Type": "Protection"
+			},
+			{
+				"Type": "Control"
+			},
+			{
+				"Type": "Initiative"
+			},
+			{
+				"Type": "Counter"
+			}
+		]
+	},
+	{
+		"Name": "鬼谷子",
+		"Specialities": [
+			{
+				"Type": "Control"
+			},
+			{
+				"Type": "Initiative"
+			}
+		]
+	},
+	{
+		"Name": "张飞",
+		"Specialities": [
+			{
+				"Type": "Protection",
+				"Value": 2
+			},
+			{
+				"Type": "Counter"
+			}
+		]
+	},
+	{
+		"Name": "夏侯惇",
+		"Specialities": [
+			{
+				"Type": "Control"
+			},
+			{
+				"Type": "Initiative"
+			},
+			{
+				"Type": "Counter"
+			}
+		]
+	},
+	{
+		"Name": "庄周",
+		"Specialities": [
+			{
+				"Type": "Protection"
+			}
+		]
+	},
+	{
+		"Name": "孙悟空",
+		"Specialities": [
+			{
+				"Type": "Brust"
+			},
+		]
+	},
+	{
+		"Name": "盘古",
+		"Specialities": [
+			{
+				"Type": "Control"
+			},
+			{
+				"Type": "LineLeader"
+			}
+		]
+	},
+	{
+		"Name": "娜可露露",
+		"Specialities": [
+			{
+				"Type": "Brust"
+			}
+		]
+	},
+	{
+		"Name": "李白",
+		"Specialities": [
+			{
+				"Type": "Reap"
+			}
+		]
+	},
+	{
+		"Name": "赵云",
+		"Specialities": [
+			{
+				"Type": "Brust"
+			}
+		]
+	},
+	{
+		"Name": "百里玄策",
+		"Specialities": [
+			{
+				"Type": "Reap"
+			}
+		]
+	},
+	{
+		"Name": "宫本武藏",
+		"Specialities": [
+			{
+				"Type": "Brust"
+			}
+		]
+	},
+	{
+		"Name": "云中君",
+		"Specialities": [
+			{
+				"Type": "Brust"
+			}
+		]
+	},
+	{
+		"Name": "黄忠",
+		"Specialities": [
+			{
+				"Type": "Protection",
+				"Value": -1
+			},
+			{
+				"Type": "Brust"
+			}
+		]
+	},
+	{
+		"Name": "伽罗",
+		"Specialities": [
+			{
+				"Type": "Protection",
+				"Value": -1
+			},
+			{
+				"Type": "Consume"
+			}
+		]
+	},
+	{
+		"Name": "鲁班",
+		"Specialities": [
+			{
+				"Type": "Protection",
+				"Value": -1
+			},
+			{
+				"Type": "Brust"
+			}
+		]
+	},
+	{
+		"Name": "狄仁杰",
+		"Specialities": [
+			{
+				"Type": "Consume"
+			}
+		]
+	},
+	{
+		"Name": "马可波罗",
+		"Specialities": [
+			{
+				"Type": "Consume"
+			},
+			{
+				"Type": "Brust"
+			}
+		]
+	},
+	{
+		"Name": "后羿",
+		"Specialities": [
+			{
+				"Type": "Protection",
+				"Value": -1
+			}
+		]
+	},
+	{
+		"Name": "虞姬",
+		"Specialities": [
+			{
+				"Type": "Control"
+			}
+		]
+	},
+	{
+		"Name": "孙尚香",
+		"Specialities": [
+			{
+				"Type": "Brust"
+			}
+		]
+	},
+	{
+		"Name": "王昭君",
+		"Specialities": [
+			{
+				"Type": "Control"
+			},
+			{
+				"Type": "Counter"
+			}
+		]
+	},
+	{
+		"Name": "小乔",
+		"Specialities": [
+			{
+				"Type": "Consume"
+			},
+			{
+				"Type": "Counter"
+			}
+		]
+	},
+	{
+		"Name": "张良",
+		"Specialities": [
+			{
+				"Type": "Control"
+			},
+			{
+				"Type": "Initiative"
+			}
+		]
+	},
+	{
+		"Name": "项羽",
+		"Specialities": [
+			{
+				"Type": "Protection"
+			},
+			{
+				"Type": "Control"
+			},
+			{
+				"Type": "Counter"
+			}
+		]
+	},
+	{
+		"Name": "吕布",
+		"Specialities": [
+			{
+				"Type": "Counter"
+			},
+			{
+				"Type": "LineLeader"
+			}
+		]
+	},
+	{
+		"Name": "孙策",
+		"Specialities": [
+			{
+				"Type": "Control"
+			},
+			{
+				"Type": "Initiative"
+			},
+			{
+				"Type": "LineLeader"
+			}
+		]
+	}
+]

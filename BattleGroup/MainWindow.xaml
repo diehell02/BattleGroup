@@ -1,0 +1,53 @@
+﻿<Window x:Class="BattleGroup.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BattleGroup"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel Orientation="Vertical" Margin="10">
+            <StackPanel Orientation="Horizontal" Margin="0,5">
+                <Label Content="BAN" Margin="5,0" MinWidth="150"></Label>
+                <ComboBox Name="BanComboBox" MinWidth="100" Margin="5,0">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <Label Content="{Binding Name}" Padding="0"></Label>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
+                <Button Content="Add" Margin="5,0" Name="AddBanBtn" Click="AddBanBtn_Click"></Button>
+                <Button Content="Remove" Margin="5,0" Name="RemoveBanBtn" Click="RemoveBanBtn_Click"></Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,5">
+                <Label Content="PickOfCompetitor" Margin="5,0" MinWidth="150"></Label>
+                <ComboBox Name="CompetitorComboBox" MinWidth="100" Margin="5,0">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <Label Content="{Binding Name}" Padding="0"></Label>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
+                <Button Content="Add" Margin="5,0" Name="AddCompetitor" Click="AddCompetitor_Click"></Button>
+                <Button Content="Remove" Margin="5,0" Name="RemoveCompetitor" Click="RemoveCompetitor_Click"></Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,5">
+                <Label Content="Pick" Margin="5,0" MinWidth="150"></Label>
+                <ComboBox Name="PickComboBox" MinWidth="100" Margin="5,0">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <Label Content="{Binding Name}" Padding="0"></Label>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
+                <Button Content="Add" Margin="5,0" Name="AddPick" Click="AddPick_Click"></Button>
+                <Button Content="Remove" Margin="5,0" Name="RemovePick" Click="RemovePick_Click"></Button>
+            </StackPanel>
+            <TextBlock Margin="10" Name="BanAndPickText" Text="{Binding BanAndPick}"></TextBlock>
+            <ScrollViewer MaxHeight="150">
+                <TextBlock Margin="10" Name="RecommendText" Text="{Binding Recommend}"></TextBlock>
+            </ScrollViewer>            
+        </StackPanel>
+    </Grid>
+</Window>
