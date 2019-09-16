@@ -35,9 +35,43 @@ namespace BattleGroup
                     text.Append(ban.Name).Append(", ");
                 });
 
-                text.Append("\nPickOfCompetitor:").Append(" ");
+                text.Append("\n对手Pick:").Append(" ");
 
                 PickOfCompetitor.ForEach(pick =>
+                {
+                    text.Append(pick.Name).Append(", ");
+                });
+                
+                Dictionary<Hero.SpecialtyType, int> placeSum = new Dictionary<Hero.SpecialtyType, int>()
+                {
+                    { Hero.SpecialtyType.Protection, 0 },
+                    { Hero.SpecialtyType.Control, 0 },
+                    { Hero.SpecialtyType.Initiative, 0 },
+                    { Hero.SpecialtyType.Counter, 0 },
+                    { Hero.SpecialtyType.LineLeader, 0 },
+                    { Hero.SpecialtyType.Burst, 0 },
+                    { Hero.SpecialtyType.Consume, 0 },
+                    { Hero.SpecialtyType.Reap, 0 },
+                };
+
+                PickOfCompetitor.ForEach(pick =>
+                {
+                    pick.Specialties.ForEach(specialty =>
+                    {
+                        placeSum[specialty.Type]++;
+                    });
+                });
+
+                text.Append("\n对手阵容:").Append(" ");
+
+                foreach(var place in placeSum)
+                {
+                    text.Append(place.Key).Append(": ").Append(place.Value).Append(", ");
+                }
+
+                text.Append("\n己方Pick:").Append(" ");
+
+                PickList.ForEach(pick =>
                 {
                     text.Append(pick.Name).Append(", ");
                 });
@@ -76,44 +110,68 @@ namespace BattleGroup
 
         private bool Filter(Formation formation)
         {
-            Dictionary<Hero.SpecialityType, int> placeSum = new Dictionary<Hero.SpecialityType, int>()
+            bool result = true;
+
+            Dictionary<Hero.SpecialtyType, int> placeSum = new Dictionary<Hero.SpecialtyType, int>()
             {
-                { Hero.SpecialityType.Protection, 0 },
-                { Hero.SpecialityType.Control, 0 },
-                { Hero.SpecialityType.Initiative, 0 },
-                { Hero.SpecialityType.Counter, 0 },
-                { Hero.SpecialityType.LineLeader, 0 },
-                { Hero.SpecialityType.Brust, 0 },
-                { Hero.SpecialityType.Consume, 0 },
-                { Hero.SpecialityType.Reap, 0 },
+                { Hero.SpecialtyType.Protection, 0 },
+                { Hero.SpecialtyType.Control, 0 },
+                { Hero.SpecialtyType.Initiative, 0 },
+                { Hero.SpecialtyType.Counter, 0 },
+                { Hero.SpecialtyType.LineLeader, 0 },
+                { Hero.SpecialtyType.Burst, 0 },
+                { Hero.SpecialtyType.Consume, 0 },
+                { Hero.SpecialtyType.Reap, 0 },
             };
 
             formation.Places.ForEach(place =>
             {
-                place.Hero.Specialities.ForEach(speciality =>
+                place.Hero.Specialties?.ForEach(speciality =>
                 {
                     placeSum[speciality.Type] += speciality.Value;
                 });                
             });
 
-            if (placeSum[Hero.SpecialityType.Control] > 1 &&
-                placeSum[Hero.SpecialityType.Protection] > 0 &&
-                placeSum[Hero.SpecialityType.Initiative] > 0 &&
-                placeSum[Hero.SpecialityType.Counter] > 0 &&
-                placeSum[Hero.SpecialityType.LineLeader] > 0)
+            if (placeSum[Hero.SpecialtyType.Control] > 0 &&
+                placeSum[Hero.SpecialtyType.Protection] > 0 &&
+                placeSum[Hero.SpecialtyType.LineLeader] > 0)
             {
-                if (placeSum[Hero.SpecialityType.Brust] > 0)
+                if (placeSum[Hero.SpecialtyType.Burst] > 0 && placeSum[Hero.SpecialtyType.Control] < 2)
                 {
-                    return true;
+                    result = false;
                 }
-                else if (placeSum[Hero.SpecialityType.Consume] > 0 &&
-                    placeSum[Hero.SpecialityType.Reap] > 0)
+
+                if (placeSum[Hero.SpecialtyType.Reap] > 0 && placeSum[Hero.SpecialtyType.Consume] == 0)
                 {
-                    return true;
+                    result = false;
+                }
+
+                if (placeSum[Hero.SpecialtyType.Counter] == 0 &&
+                    placeSum[Hero.SpecialtyType.Initiative] == 0)
+                {
+                    result = false;
+                }
+
+                if (placeSum[Hero.SpecialtyType.Counter] > 0 &&
+                    placeSum[Hero.SpecialtyType.Initiative] == 0 && 
+                    placeSum[Hero.SpecialtyType.Control] < 2)
+                {
+                    result = false;
+                }
+
+                if (placeSum[Hero.SpecialtyType.Counter] == 0 &&
+                    placeSum[Hero.SpecialtyType.Initiative] > 0 &&
+                    placeSum[Hero.SpecialtyType.Control] < 2)
+                {
+                    result = false;
                 }
             }
+            else
+            {
+                result = false;
+            }
 
-            return false;
+            return result;
         }
 
         private List<Player> LoadFromFile(string path)
@@ -252,26 +310,26 @@ namespace BattleGroup
             }
         }
 
-        private List<KeyValuePair<string, int>> GetHeroSummary(List<Formation> formations)
+        private List<KeyValuePair<Hero, int>> GetHeroSummary(List<Formation> formations)
         {
-            Dictionary<string, int> heroes = new Dictionary<string, int>();
+            Dictionary<Hero, int> heroes = new Dictionary<Hero, int>();
 
             formations.ForEach(formation =>
             {
                 formation.Places.ForEach(place =>
                 {
-                    if (heroes.ContainsKey(place.Hero.Name))
+                    if (heroes.ContainsKey(place.Hero))
                     {
-                        heroes[place.Hero.Name]++;
+                        heroes[place.Hero]++;
                     }
                     else
                     {
-                        heroes.Add(place.Hero.Name, 1);
+                        heroes.Add(place.Hero, 1);
                     }
                 });
             });
 
-            List<KeyValuePair<string, int>> result = new List<KeyValuePair<string, int>>(heroes);
+            List<KeyValuePair<Hero, int>> result = new List<KeyValuePair<Hero, int>>(heroes);
 
             result.Sort((x, y) =>
             {
@@ -303,7 +361,12 @@ namespace BattleGroup
 
             foreach(var item in summary)
             {
-                result.Append($"{item.Key} {item.Value}").Append("\n");
+                if (PickList.Contains(item.Key))
+                {
+                    continue;
+                }
+
+                result.Append($"{item.Key.Name} {item.Value}").Append("\n");
             }
 
             return result.ToString();

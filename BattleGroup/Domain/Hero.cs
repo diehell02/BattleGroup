@@ -10,22 +10,22 @@ namespace BattleGroup.Domain
     [DataContract]
     class Hero
     {
-        public enum SpecialityType
+        public enum SpecialtyType
         {
             Protection,
             Control,
             Initiative,
             Counter,
             LineLeader,
-            Brust,
+            Burst,
             Consume,
             Reap,
         }
 
         [DataContract]
-        public class Speciality
+        public class Specialty
         {
-            private SpecialityType? type;
+            private SpecialtyType? type;
 
             [DataMember(Name ="Type")]
             public string TypeWrap
@@ -35,13 +35,13 @@ namespace BattleGroup.Domain
             }
 
             [IgnoreDataMember]
-            public SpecialityType Type
+            public SpecialtyType Type
             {
                 get
                 {
                     if (type == null)
                     {
-                        SpecialityType _type = SpecialityType.Control;
+                        SpecialtyType _type = SpecialtyType.Control;
                         Enum.TryParse(TypeWrap, out _type);
 
                         type = _type;
@@ -63,11 +63,6 @@ namespace BattleGroup.Domain
             {
                 Value = (Value == 0) ? 1 : Value;
             }
-
-            //public Speciality()
-            //{
-            //    Value = 1;
-            //}
         }
 
         [DataMember]
@@ -78,7 +73,7 @@ namespace BattleGroup.Domain
         }
 
         [DataMember]
-        public List<Speciality> Specialities
+        public List<Specialty> Specialties
         {
             get;
             set;
@@ -86,7 +81,7 @@ namespace BattleGroup.Domain
 
         public Hero()
         {
-            Specialities = new List<Speciality>();
+            Specialties = new List<Specialty>();
         }
     }
 }

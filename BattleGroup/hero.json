@@ -1,7 +1,7 @@
 ﻿[
 	{
 		"Name": "牛魔",
-		"Specialities": [
+		"Specialties": [
 			{
 				"Type": "Protection"
 			},
@@ -18,7 +18,7 @@
 	},
 	{
 		"Name": "鬼谷子",
-		"Specialities": [
+		"Specialties": [
 			{
 				"Type": "Control"
 			},
@@ -29,7 +29,7 @@
 	},
 	{
 		"Name": "张飞",
-		"Specialities": [
+		"Specialties": [
 			{
 				"Type": "Protection",
 				"Value": 2
@@ -41,7 +41,7 @@
 	},
 	{
 		"Name": "夏侯惇",
-		"Specialities": [
+		"Specialties": [
 			{
 				"Type": "Control"
 			},
@@ -55,7 +55,7 @@
 	},
 	{
 		"Name": "庄周",
-		"Specialities": [
+		"Specialties": [
 			{
 				"Type": "Protection"
 			}
@@ -63,34 +63,34 @@
 	},
 	{
 		"Name": "孙悟空",
-		"Specialities": [
+		"Specialties": [
 			{
-				"Type": "Brust"
-			},
+				"Type": "Burst"
+			}
 		]
 	},
 	{
 		"Name": "盘古",
-		"Specialities": [
+		"Specialties": [
 			{
 				"Type": "Control"
 			},
 			{
-				"Type": "LineLeader"
+				"Type": "Reap"
 			}
 		]
 	},
 	{
 		"Name": "娜可露露",
-		"Specialities": [
+		"Specialties": [
 			{
-				"Type": "Brust"
+				"Type": "Burst"
 			}
 		]
 	},
 	{
 		"Name": "李白",
-		"Specialities": [
+		"Specialties": [
 			{
 				"Type": "Reap"
 			}
@@ -98,15 +98,15 @@
 	},
 	{
 		"Name": "赵云",
-		"Specialities": [
+		"Specialties": [
 			{
-				"Type": "Brust"
+				"Type": "Burst"
 			}
 		]
 	},
 	{
 		"Name": "百里玄策",
-		"Specialities": [
+		"Specialties": [
 			{
 				"Type": "Reap"
 			}
@@ -114,35 +114,35 @@
 	},
 	{
 		"Name": "宫本武藏",
-		"Specialities": [
+		"Specialties": [
 			{
-				"Type": "Brust"
+				"Type": "Burst"
 			}
 		]
 	},
 	{
 		"Name": "云中君",
-		"Specialities": [
+		"Specialties": [
 			{
-				"Type": "Brust"
+				"Type": "Reap"
 			}
 		]
 	},
 	{
 		"Name": "黄忠",
-		"Specialities": [
+		"Specialties": [
 			{
 				"Type": "Protection",
 				"Value": -1
 			},
 			{
-				"Type": "Brust"
+				"Type": "Burst"
 			}
 		]
 	},
 	{
 		"Name": "伽罗",
-		"Specialities": [
+		"Specialties": [
 			{
 				"Type": "Protection",
 				"Value": -1
@@ -154,19 +154,19 @@
 	},
 	{
 		"Name": "鲁班",
-		"Specialities": [
+		"Specialties": [
 			{
 				"Type": "Protection",
 				"Value": -1
 			},
 			{
-				"Type": "Brust"
+				"Type": "Burst"
 			}
 		]
 	},
 	{
 		"Name": "狄仁杰",
-		"Specialities": [
+		"Specialties": [
 			{
 				"Type": "Consume"
 			}
@@ -174,18 +174,18 @@
 	},
 	{
 		"Name": "马可波罗",
-		"Specialities": [
+		"Specialties": [
 			{
 				"Type": "Consume"
 			},
 			{
-				"Type": "Brust"
+				"Type": "Burst"
 			}
 		]
 	},
 	{
 		"Name": "后羿",
-		"Specialities": [
+		"Specialties": [
 			{
 				"Type": "Protection",
 				"Value": -1
@@ -194,7 +194,7 @@
 	},
 	{
 		"Name": "虞姬",
-		"Specialities": [
+		"Specialties": [
 			{
 				"Type": "Control"
 			}
@@ -202,15 +202,15 @@
 	},
 	{
 		"Name": "孙尚香",
-		"Specialities": [
+		"Specialties": [
 			{
-				"Type": "Brust"
+				"Type": "Burst"
 			}
 		]
 	},
 	{
 		"Name": "王昭君",
-		"Specialities": [
+		"Specialties": [
 			{
 				"Type": "Control"
 			},
@@ -221,7 +221,7 @@
 	},
 	{
 		"Name": "小乔",
-		"Specialities": [
+		"Specialties": [
 			{
 				"Type": "Consume"
 			},
@@ -232,7 +232,7 @@
 	},
 	{
 		"Name": "张良",
-		"Specialities": [
+		"Specialties": [
 			{
 				"Type": "Control"
 			},
@@ -243,7 +243,7 @@
 	},
 	{
 		"Name": "项羽",
-		"Specialities": [
+		"Specialties": [
 			{
 				"Type": "Protection"
 			},
@@ -257,7 +257,7 @@
 	},
 	{
 		"Name": "吕布",
-		"Specialities": [
+		"Specialties": [
 			{
 				"Type": "Counter"
 			},
@@ -268,7 +268,7 @@
 	},
 	{
 		"Name": "孙策",
-		"Specialities": [
+		"Specialties": [
 			{
 				"Type": "Control"
 			},
@@ -277,6 +277,680 @@
 			},
 			{
 				"Type": "LineLeader"
+			}
+		]
+	},
+	{
+		"Name": "阿珂",
+		"Specialties": [
+			{
+				"Type": "Burst"
+			},
+			{
+				"Type": "Reap"
+			}
+		]
+	},
+	{
+		"Name": "白起",
+		"Specialties": [
+			{
+				"Type": "Control"
+			},
+			{
+				"Type": "Initiative"
+			},
+			{
+				"Type": "Counter"
+			}
+		]
+	},
+	{
+		"Name": "安琪拉",
+		"Specialties": [
+			{
+				"Type": "Burst"
+			}
+		]
+	},
+	{
+		"Name": "百里守约",
+		"Specialties": [
+			{
+				"Type": "Consume"
+			}
+		]
+	},
+	{
+		"Name": "扁鹊",
+		"Specialties": [
+			{
+				"Type": "Consume"
+			}
+		]
+	},
+	{
+		"Name": "不知火舞",
+		"Specialties": [
+			{
+				"Type": "Control"
+			},
+			{
+				"Type": "Burst"
+			}
+		]
+	},
+	{
+		"Name": "蔡文姬",
+		"Specialties": [
+			{
+				"Type": "Protection"
+			}
+		]
+	},
+	{
+		"Name": "曹操",
+		"Specialties": [
+			{
+				"Type": "LineLeader"
+			}
+		]
+	},
+	{
+		"Name": "嫦娥",
+		"Specialties": [
+		]
+	},
+	{
+		"Name": "成吉思汗",
+		"Specialties": [
+			{
+				"Type": "Reap"
+			},
+			{
+				"Type": "Protection",
+				"Value": -1
+			}
+		]
+	},
+	{
+		"Name": "程咬金",
+		"Specialties": [
+			{
+				"Type": "LineLeader"
+			}
+		]
+	},
+	{
+		"Name": "达摩",
+		"Specialties": [
+			{
+				"Type": "Control"
+			}
+		]
+	},
+	{
+		"Name": "妲己",
+		"Specialties": [
+			{
+				"Type": "Burst"
+			},
+			{
+				"Type": "Protection",
+				"Value": -1
+			}
+		]
+	},
+	{
+		"Name": "大乔",
+		"Specialties": [
+			{
+				"Type": "Counter"
+			},
+			{
+				"Type": "Control"
+			}
+		]
+	},
+	{
+		"Name": "典韦",
+		"Specialties": [
+			{
+				"Type": "Reap"
+			}
+		]
+	},
+	{
+		"Name": "貂蝉",
+		"Specialties": [
+			{
+				"Type": "Reap"
+			}
+		]
+	},
+	{
+		"Name": "东皇太一",
+		"Specialties": [
+			{
+				"Type": "Initiative"
+			}
+		]
+	},
+	{
+		"Name": "盾山",
+		"Specialties": [
+			{
+				"Type": "Initiative"
+			},
+			{
+				"Type": "Counter"
+			},
+			{
+				"Type": "Protection"
+			}
+		]
+	},
+	{
+		"Name": "干将莫邪",
+		"Specialties": [
+			{
+				"Type": "Burst"
+			},
+			{
+				"Type": "Consume"
+			}
+		]
+	},
+	{
+		"Name": "高渐离",
+		"Specialties": [
+			{
+				"Type": "Reap"
+			}
+		]
+	},
+	{
+		"Name": "公孙离",
+		"Specialties": [
+			{
+				"Type": "Burst"
+			}
+		]
+	},
+	{
+		"Name": "关羽",
+		"Specialties": [
+			{
+				"Type": "Control"
+			},
+			{
+				"Type": "Initiative"
+			},
+			{
+				"Type": "Counter"
+			},
+			{
+				"Type": "LineLeader"
+			}
+		]
+	},
+	{
+		"Name": "韩信",
+		"Specialties": [
+			{
+				"Type": "Reap"
+			}
+		]
+	},
+	{
+		"Name": "花木兰",
+		"Specialties": [
+			{
+				"Type": "Control"
+			},
+			{
+				"Type": "LineLeader"
+			},
+			{
+				"Type": "Burst"
+			}
+		]
+	},
+	{
+		"Name": "姜子牙",
+		"Specialties": [
+			{
+				"Type": "Control"
+			},
+			{
+				"Type": "Consume"
+			},
+			{
+				"Type": "Protection",
+				"Value": -1
+			}
+		]
+	},
+	{
+		"Name": "橘右京",
+		"Specialties": [
+			{
+				"Type": "Control"
+			},
+			{
+				"Type": "Reap"
+			}
+		]
+	},
+	{
+		"Name": "铠",
+		"Specialties": [
+			{
+				"Type": "LineLeader"
+			},
+			{
+				"Type": "Reap"
+			}
+		]
+	},
+	{
+		"Name": "狂铁",
+		"Specialties": [
+			{
+				"Type": "LineLeader"
+			},
+			{
+				"Type": "Reap"
+			}
+		]
+	},
+	{
+		"Name": "兰陵王",
+		"Specialties": [
+			{
+				"Type": "Burst"
+			},
+			{
+				"Type": "Reap"
+			}
+		]
+	},
+	{
+		"Name": "老夫子",
+		"Specialties": [
+			{
+				"Type": "Control"
+			},
+			{
+				"Type": "LineLeader"
+			}
+		]
+	},
+	{
+		"Name": "李信",
+		"Specialties": [
+			{
+				"Type": "Burst"
+			},
+			{
+				"Type": "LineLeader"
+			},
+			{
+				"Type": "Consume"
+			},
+			{
+				"Type": "Reap"
+			}
+		]
+	},
+	{
+		"Name": "李元芳",
+		"Specialties": [
+			{
+				"Type": "Reap"
+			},
+			{
+				"Type": "Counter"
+			}
+		]
+	},
+	{
+		"Name": "廉颇",
+		"Specialties": [
+			{
+				"Type": "Control"
+			},
+			{
+				"Type": "Initiative"
+			},
+			{
+				"Type": "Counter"
+			}
+		]
+	},
+	{
+		"Name": "刘邦",
+		"Specialties": [
+			{
+				"Type": "LineLeader"
+			},
+			{
+				"Type": "Protection"
+			}
+		]
+	},
+	{
+		"Name": "刘备",
+		"Specialties": [
+			{
+				"Type": "Reap"
+			}
+		]
+	},
+	{
+		"Name": "刘禅",
+		"Specialties": [
+			{
+				"Type": "Control"
+			}
+		]
+	},
+	{
+		"Name": "露娜",
+		"Specialties": [
+			{
+				"Type": "Reap"
+			}
+		]
+	},
+	{
+		"Name": "马超",
+		"Specialties": [
+			{
+				"Type": "Reap"
+			}
+		]
+	},
+	{
+		"Name": "梦奇",
+		"Specialties": [
+			{
+				"Type": "Consume"
+			}
+		]
+	},
+	{
+		"Name": "米莱狄",
+		"Specialties": [
+			{
+				"Type": "Consume"
+			},
+			{
+				"Type": "Protection",
+				"Value": -1
+			}
+		]
+	},
+	{
+		"Name": "芈月",
+		"Specialties": [
+			{
+				"Type": "LineLeader"
+			}
+		]
+	},
+	{
+		"Name": "明世隐",
+		"Specialties": [
+			{
+				"Type": "Protection"
+			}
+		]
+	},
+	{
+		"Name": "墨子",
+		"Specialties": [
+			{
+				"Type": "Control"
+			},
+			{
+				"Type": "Consume"
+			}
+		]
+	},
+	{
+		"Name": "哪吒",
+		"Specialties": [
+			{
+				"Type": "Initiative"
+			},
+			{
+				"Type": "Reap"
+			}
+		]
+	},
+	{
+		"Name": "女娲",
+		"Specialties": [
+			{
+				"Type": "Consume"
+			},
+			{
+				"Type": "Control"
+			}
+		]
+	},
+	{
+		"Name": "裴擒虎",
+		"Specialties": [
+			{
+				"Type": "Burst"
+			}
+		]
+	},
+	{
+		"Name": "沈梦溪",
+		"Specialties": [
+			{
+				"Type": "Consume"
+			}
+		]
+	},
+	{
+		"Name": "上官婉儿",
+		"Specialties": [
+			{
+				"Type": "Reap"
+			}
+		]
+	},
+	{
+		"Name": "苏烈",
+		"Specialties": [
+			{
+				"Type": "Control"
+			},
+			{
+				"Type": "Initiative"
+			}
+		]
+	},
+	{
+		"Name": "孙膑",
+		"Specialties": [
+			{
+				"Type": "Counter"
+			}
+		]
+	},
+	{
+		"Name": "太乙真人",
+		"Specialties": [
+			{
+				"Type": "Protection"
+			},
+			{
+				"Type": "Initiative"
+			}
+		]
+	},
+	{
+		"Name": "雅典娜",
+		"Specialties": [
+			{
+				"Type": "LineLeader"
+			},
+			{
+				"Type": "Reap"
+			}
+		]
+	},
+	{
+		"Name": "亚瑟",
+		"Specialties": [
+			{
+				"Type": "LineLeader"
+			},
+			{
+				"Type": "Initiative"
+			}
+		]
+	},
+	{
+		"Name": "杨戬",
+		"Specialties": [
+			{
+				"Type": "Reap"
+			}
+		]
+	},
+	{
+		"Name": "杨玉环",
+		"Specialties": [
+			{
+				"Type": "Consume"
+			},
+			{
+				"Type": "Counter"
+			}
+		]
+	},
+	{
+		"Name": "瑶",
+		"Specialties": [
+			{
+				"Type": "Protection"
+			}
+		]
+	},
+	{
+		"Name": "奕星",
+		"Specialties": [
+			{
+				"Type": "Consume"
+			},
+			{
+				"Type": "Counter"
+			}
+		]
+	},
+	{
+		"Name": "嬴政",
+		"Specialties": [
+			{
+				"Type": "Consume"
+			}
+		]
+	},
+	{
+		"Name": "元歌",
+		"Specialties": [
+			{
+				"Type": "Burst"
+			}
+		]
+	},
+	{
+		"Name": "甄姬",
+		"Specialties": [
+			{
+				"Type": "Consume"
+			},
+			{
+				"Type": "Counter"
+			}
+		]
+	},
+	{
+		"Name": "钟馗",
+		"Specialties": [
+			{
+				"Type": "Initiative"
+			}
+		]
+	},
+	{
+		"Name": "钟无艳",
+		"Specialties": [
+			{
+				"Type": "Control"
+			}
+		]
+	},
+	{
+		"Name": "周瑜",
+		"Specialties": [
+			{
+				"Type": "Consume"
+			}
+		]
+	},
+	{
+		"Name": "诸葛亮",
+		"Specialties": [
+			{
+				"Type": "Reap"
+			}
+		]
+	},
+	{
+		"Name": "猪八戒",
+		"Specialties": [
+			{
+				"Type": "Control"
+			}
+		]
+	},
+	{
+		"Name": "曜",
+		"Specialties": [
+			{
+				"Type": "LineLeader"
+			},
+			{
+				"Type": "Burst"
+			},
+			{
+				"Type": "Reap"
+			}
+		]
+	},
+	{
+		"Name": "司马懿",
+		"Specialties": [
+			{
+				"Type": "Reap"
+			}
+		]
+	},
+	{
+		"Name": "武则天",
+		"Specialties": [
+			{
+				"Type": "Control"
+			},
+			{
+				"Type": "Consume"
 			}
 		]
 	}
